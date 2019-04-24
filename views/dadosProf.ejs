@@ -1,0 +1,28 @@
+<%- include('header') %>
+<h1>Dados Profissionais</h1>
+<div>
+   <h3>Cursos</h3>
+   <ul>
+       <% dadosProf.forEach(dados => { %>
+        <li><a href=""><%= dados.curso %></a></li>
+        <% }) %>
+   </ul>
+</div>
+<div>
+    <h3>Trablahos Realizados</h3>
+    <ul>
+        <% trbReal.forEach(dados => { %>
+            <li><a href=""><%= dados.trabalho %></a></li>
+        <% }) %>
+    </ul>
+ </div>
+ <div>
+    <h3>Projetos Rodando</h3>
+    <ul>
+        <% projReal.forEach(dados => { %>
+            <li><a href=""><%= dados.projeto %></a></li>
+        <% }) %>
+    </ul>
+ </div>
+
+<%- include('footer') %>

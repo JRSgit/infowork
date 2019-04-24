@@ -1,0 +1,19 @@
+<%- include('header') %>
+<h1>Projetos desenvolvidos </h1>
+<div>
+    <h2>Apps Webs</h2>
+    <ul>
+        <% projReal.forEach( dados => { %>
+        <a href=""><li><%= dados.projeto %></li></a>
+        <% }) %>
+    </ul>
+</div>
+<div>
+    <h2>Apps Mobile</h2>
+    <ul>
+        <% projReal.forEach( dados => { %>
+        <a href=""><li><%= dados.projeto %></li></a>
+        <% }) %>
+    </ul>
+</div>
+<%- include('footer') %>

@@ -1,0 +1,25 @@
+<%- include('header') %>
+<h1>Dados do Desenvolvedor:</h1>
+<div>
+    <h2>Dados Pessoais</h2>
+    <% userDb.forEach( dados => {  %>
+        <a href="/dadosPessoais">
+            <p><%= dados.user %></p>
+        </a>      
+       <% }) %> 
+</div>
+<div>
+    <h2>Dados Profissionais</h2>
+    <% cursosDb.forEach( dados => {  %>
+        <a href="/dadosProf">
+            <p><%= dados.curso %></p>
+        </a>      
+        <% }) %> 
+</div>
+<div>
+    <h2>Projetos realizados</h2>
+    <a href="/projReal">
+        <p>Estão no ar e rodando!!</p>
+    </a>
+</div>
+<%- include('footer') %>

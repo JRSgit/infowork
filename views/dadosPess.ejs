@@ -1,0 +1,20 @@
+<%- include('header') %>
+<h1>Dados Pessoais</h1>
+<div class="left">
+    <% userDb.forEach( dados => { %>
+    <h3>Nome:</h3><p><%= dados.user %></p>
+    <% }) %>
+
+    <% dadosPess.forEach( dados => { %>
+    <h3>Nacionalidade:</h3><p><%= dados.nacionalidade %></p>
+    <h3>Natural de:</h3><p><%= dados.naturalDe %></p>
+    <h3>Reside em:</h3><p><%= dados.ResideEm %></p>
+</div>
+<div class="lateral">
+    <h3>Cursou:</h3><p><%= dados.trabalha %></p>
+    <h3>Trabalha:</h3><p><%= dados.cursou %></p>
+    <h3>Robby:</h3><p><%= dados.hobby %></p>
+    <h3>Gosta de Fazer:</h3><p>Capacitar Pessoas.</p>
+    <% }) %>
+</div>
+<%- include('footer') %>
